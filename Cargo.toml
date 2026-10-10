@@ -1,0 +1,21 @@
+[package]
+name = "gray-context-pin"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.91"
+license = "MIT"
+description = "Pin files or notes into the prompt every turn so compaction can't drop them"
+
+[[bin]]
+name = "gray-context-pin"
+path = "src/main.rs"
+
+[lib]
+name = "gray_context_pin"
+path = "src/lib.rs"
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+strip = true
