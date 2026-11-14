@@ -27,6 +27,7 @@ fn manifest() -> Value {
         "version": env!("CARGO_PKG_VERSION"),
         "protocol": "1.1",
         "tools": [],
+        "description": "pin files or notes into every turn",
         "commands": ["/pin", "/unpin", "/pins"],
         "command_descriptions": {"/pin": "pin a file or note into every turn", "/unpin": "drop a pin", "/pins": "list pins"},
         "hooks": ["prompt/context"],
